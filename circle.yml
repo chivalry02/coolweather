@@ -1,3 +1,4 @@
 test:
-  post:
-    - cp -R ./coolweather/build/apk $CIRCLE_ARTIFACTS
+  override:
+    - ./gradlew assembleRelease
+    - cp -r coolweather/build/outputs $CIRCLE_ARTIFACTS
