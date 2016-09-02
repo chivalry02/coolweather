@@ -1,0 +1,3 @@
+test:
+  post:
+    - cp -R ./XXXXXXXX/build/apk $CIRCLE_ARTIFACTS
